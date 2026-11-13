@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Find learning, accessibility, wellbeing, and career resources on campus.">
+  <title>Campus Resource Finder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to resources</a>
+  <header class="site-header"><p class="eyebrow">Student support directory</p><h1>Campus Resource Finder</h1><p>Search services and spaces that can help you make the most of campus.</p></header>
+  <main id="main" class="page-shell">
+    <section aria-labelledby="search-heading" class="search-panel">
+      <h2 id="search-heading">Find a resource</h2>
+      <div class="filters">
+        <div><label for="search">Search by name, support, or location</label><input id="search" type="search" autocomplete="off" placeholder="Try “tutoring” or “library”"></div>
+        <div><label for="category">Category</label><select id="category"><option value="all">All categories</option><option value="learning">Learning</option><option value="accessibility">Accessibility</option><option value="wellbeing">Wellbeing</option><option value="career">Career</option></select></div>
+      </div>
+      <p id="result-status" class="result-status" role="status" aria-live="polite"></p>
+    </section>
+    <section aria-label="Matching campus resources"><div id="results" class="resource-grid"></div></section>
+  </main>
+  <footer><p>Sample directory for a frontend learning project. Confirm service details with your campus.</p></footer>
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>
